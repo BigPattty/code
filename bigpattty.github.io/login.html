@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Solutions - Login</title>
+        <link rel="stylesheet" href="css/login.css">
+        <script src="js/login.js" defer></script>
+    </head>
+    <body>
+        <div class="bigbox">
+            <div class="logbox">
+                <h2>Sign In</h2>
+                <br>
+                <form id="logcollect" onsubmit="userlogin(event)">
+                    <div class="textbox">
+                        <input type="text" id="username" name="username" required placeholder=" ">
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="textbox">
+                        <input type="password" id="password" name="password" required placeholder=" ">
+                        <label for="password">Password</label>
+                    </div>
+                    <button type="submit">
+                        <span class="text">Ready to login?</span>
+                        <div class="spinner"></div>
+                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            <path fill="none" d="M14 27 l10 10 l20 -20"></path>
+                        </svg>
+                        <svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            <path fill="none" d="M16 16 l20 20 M36 16 l-20 20"></path>
+                        </svg>
+                    </button>
+                </form>
+                <div id="result" class="hidden"></div>
+                <div class="register">
+                    Did you forget to register? <a href="register.html">Try going here first!</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
